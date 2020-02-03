@@ -1,4 +1,4 @@
-> 汉化了https://github.com/shellphish/how2heap,有翻译不到位的地方多包涵
+> 汉化了[shellphish的how2heap项目](https://github.com/shellphish/how2heap) 最下方是原文
 
 # 堆利用教程 
 
@@ -64,12 +64,12 @@ jemalloc 开发框架: https://github.com/CENSUS/shadow
 
 # Other resources
 
-Some good heap exploitation resources, roughly in order of their publication, are:
+一些好的堆利用的学习资源, 大致按其发布顺序如下:
 
-- glibc in-depth tutorial (https://heap-exploitation.dhavalkapil.com/) - book and exploit samples
-- ptmalloc fanzine, a set of resources and examples related to meta-data attacks on ptmalloc (http://tukan.farm/2016/07/26/ptmalloc-fanzine/)
+- glibc in-depth tutorial (https://heap-exploitation.dhavalkapil.com/) - 书籍和利用案例
+- ptmalloc fanzine, 一系列与ptmalloc上meta-data攻击有关的资源和例子 (http://tukan.farm/2016/07/26/ptmalloc-fanzine/)
 - A malloc diagram, from libheap (https://raw.githubusercontent.com/cloudburst/libheap/master/heap.png)
-- Glibc Adventures: The Forgotten Chunk (https://go.contextis.com/rs/140-OCV-459/images/Glibc_Adventures-The_Forgotten_Chunks.pdf) - advanced heap exploitation
+- Glibc Adventures: The Forgotten Chunk (https://go.contextis.com/rs/140-OCV-459/images/Glibc_Adventures-The_Forgotten_Chunks.pdf) - 高级堆利用方法
 - Pseudomonarchia jemallocum (http://www.phrack.org/issues/68/10.html)
 - The House Of Lore: Reloaded (http://phrack.org/issues/67/8.html)
 - Malloc Des-Maleficarum (http://phrack.org/issues/66/10.html) - some malloc exploitation techniques
@@ -84,9 +84,9 @@ Some good heap exploitation resources, roughly in order of their publication, ar
 - Painless intro to the Linux userland heap (https://sensepost.com/blog/2017/painless-intro-to-the-linux-userland-heap/)
 
 # Hardening
-There are a couple of "hardening" measures embedded in glibc, like `export MALLOC_CHECK_=1` (enables some checks), `export MALLOC_PERTURB_=1` (data is overwritten), `export MALLOC_MMAP_THRESHOLD_=1` (always use mmap()), ...
+glibc中嵌入了一些“hardening”措施, 像 `export MALLOC_CHECK_=1` (启用了一些检查), `export MALLOC_PERTURB_=1` (数据被覆盖), `export MALLOC_MMAP_THRESHOLD_=1` (始终使用mmap()), ...
 
-More info: [mcheck()](http://www.gnu.org/software/libc/manual/html_node/Heap-Consistency-Checking.html), [mallopt()](http://www.gnu.org/software/libc/manual/html_node/Malloc-Tunable-Parameters.html).
+更多的信息: [mcheck()](http://www.gnu.org/software/libc/manual/html_node/Heap-Consistency-Checking.html), [mallopt()](http://www.gnu.org/software/libc/manual/html_node/Malloc-Tunable-Parameters.html).
 
 There's also some tracing support as [mtrace()](http://manpages.ubuntu.com/mtrace), [malloc_stats()](http://manpages.ubuntu.com/malloc_stats), [malloc_info()](http://manpages.ubuntu.com/malloc_info), [memusage](http://manpages.ubuntu.com/memusage), and in other functions in this family.
 
