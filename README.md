@@ -1,5 +1,7 @@
 > 汉化了[shellphish的how2heap项目](https://github.com/shellphish/how2heap) 最下方是原文
 
+先已汉化:first-fit,fastbin dup,fastbin dup consolidate,fastbin dup into stack
+
 # 堆利用教程 
 
 这个项目用于学习各种堆利用技术
